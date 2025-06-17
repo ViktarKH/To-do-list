@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href="/">Strona główna</a> <a href="/admin.html" id="adminLink"
+                    style="display: none;">Administrator</a>
+            </div>
+            <div class="auth-links">
+                <span id="welcomeMessage" style="color: white; margin-right: 10px; display: none;"></span>
+                <a href="/login.html" id="loginLink">Zaloguj się</a> <a href="/register.html"
+                    id="registerLink">Zarejestruj się</a> <button id="logoutBtn" style="display: none;">Wyloguj
+                    się</button>
+            </div>
+        </div>
+
+        <h1>Moja lista zadań</h1>
+        <div id="message" class="message" style="display: none;"></div>
+
+        <div id="todoSection" style="display: none;">
+            <input type="text" id="todoTitle" placeholder="Dodaj nowe zadanie"> <textarea id="todoDescription"
+                placeholder="Opis zadania (opcjonalnie)"></textarea> <button id="addTodoBtn">Dodaj zadanie</button>
+            <h2>Lista zadań:</h2>
+            <ul id="todoList">
+            </ul>
+        </div>
+        <div id="notLoggedInMessage" style="display: block;">
+            <p>Proszę, <a href="/login.html">zaloguj się</a> lub <a href="/register.html">zarejestruj się</a>, aby
+                zarządzać swoimi zadaniami.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

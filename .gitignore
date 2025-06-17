@@ -1,0 +1,17 @@
+# Ignore node_modules directory
+node_modules/
+.env
+dist/
+
+# Ignore common OS and build-related files
+.DS_Store       # macOS specific
+Thumbs.db       # Windows specific
+npm-debug.log* # npm debug logs
+yarn-debug.log* # yarn debug logs
+yarn-error.log* # yarn error logs
+.env            # Environment variables
+.vscode/        # VS Code settings
+dist/           # Common build output directory
+build/          # Another common build output directory
+*.log           # Any log files
+.parcel-cache/  # Parcel bundler cache

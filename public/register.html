@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href="/">Strona główna</a> <a href="/admin.html" id="adminLink"
+                    style="display: none;">Administrator</a>
+            </div>
+            <div class="auth-links">
+                <span id="welcomeMessage" style="color: white; margin-right: 10px; display: none;"></span>
+                <a href="/login.html" id="loginLink">Zaloguj się</a> <a href="/register.html"
+                    id="registerLink">Zarejestruj się</a> <button id="logoutBtn" style="display: none;">Wyloguj
+                    się</button>
+            </div>
+        </div>
+
+        <h1>Rejestracja</h1>
+        <div id="message" class="message" style="display: none;"></div>
+
+        <input type="text" id="username" placeholder="Nazwa użytkownika"> <input type="password" id="password"
+            placeholder="Hasło"> <button id="registerBtn">Zarejestruj się</button>
+        <p>Masz już konto? <a href="/login.html">Zaloguj się</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
